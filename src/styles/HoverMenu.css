@@ -1,0 +1,23 @@
+.hover-menu-container {
+    @apply fixed top-0 left-0 w-full z-50 flex justify-center;
+}
+
+.hamburger-icon-wrapper {
+    @apply bg-white p-4 rounded-b-lg shadow-lg cursor-pointer flex justify-center items-center;
+}
+
+.hamburger-icon {
+    @apply w-8 h-8 text-black;
+}
+
+.hover-menu-overlay {
+    @apply absolute top-full left-0 w-full bg-black bg-opacity-90 py-4 rounded-b-lg shadow-lg flex flex-col items-center space-y-4;
+}
+
+.hover-menu-links {
+    @apply flex flex-col space-y-4 text-white text-xl;
+}
+
+.hover-menu-link {
+    @apply hover:text-blue-400 transition-colors duration-300;
+}

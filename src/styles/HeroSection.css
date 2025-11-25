@@ -1,0 +1,104 @@
+.hero-section {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.cube-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    /* Adjust as needed */
+    height: 80%;
+    /* Adjust as needed */
+    object-fit: contain;
+    opacity: 1;
+    /* Perfect for filling parent */
+}
+
+.hero-content {
+    /* If you have a fixed header/navbar, you can add padding here */
+    position: relative;
+    width: 30%;
+    /* Adjust as needed */
+    height: 30%;
+    /* Adjust as needed */
+    z-index: 10;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.hero-title {
+    font-size: 3.75rem;
+    /* text-6xl */
+    font-weight: 800;
+    /* font-extrabold */
+    white-space: nowrap;
+    z-index: 20;
+}
+
+@media (min-width: 768px) {
+
+    /* md:text-8xl */
+    .hero-title {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* lg:text-9xl */
+    .hero-title {
+        font-size: 8rem;
+    }
+}
+
+.hero-logo {
+    position: relative;
+    z-index: 10;
+    height: 12rem;
+    /* h-48 */
+    width: auto;
+}
+
+.hero-subtitle {
+    font-size: 3.75rem;
+    /* text-6xl */
+    font-weight: 800;
+    /* font-extrabold */
+    white-space: nowrap;
+    z-index: 20;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    /* md:text-8xl */
+    .hero-subtitle {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* lg:text-9xl */
+    .hero-subtitle {
+        font-size: 8rem;
+    }
+}
