@@ -1,23 +1,67 @@
-.hover-menu-container {
-    @apply fixed top-0 left-0 w-full z-50 flex justify-center;
+/* --- src/styles/HoverMenu.css (Updated for Fade Transition at Top) --- */
+
+.hover-menu {
+    /* Position fixed at the top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* Set a specific height for the navbar bar */
+    height: 70px;
+    /* Adjust as needed */
+
+    /* Ensure it's on top of other content */
+    z-index: 1000;
+
+    /* The background of the menu bar itself */
+    background-color: black;
+
+    /* 1. INITIAL STATE: Hidden */
+    opacity: 0;
+    visibility: hidden;
+
+    /* 2. Transition properties set for opacity and visibility */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.hamburger-icon-wrapper {
-    @apply bg-white p-4 rounded-b-lg shadow-lg cursor-pointer flex justify-center items-center;
+.hover-menu.visible {
+    /* 3. FINAL STATE: Fully visible */
+    opacity: 1;
+    visibility: visible;
 }
 
-.hamburger-icon {
-    @apply w-8 h-8 text-black;
+/* --- Styles for the Menu Content (Links and Layout) --- */
+
+.hover-menu .menu-content {
+    /* Ensure the content is centered within the fixed bar */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centers the links horizontally */
+    align-items: center;
+    /* Centers the links vertically */
 }
 
-.hover-menu-overlay {
-    @apply absolute top-full left-0 w-full bg-black bg-opacity-90 py-4 rounded-b-lg shadow-lg flex flex-col items-center space-y-4;
+/* Styles for the Navigation Links */
+.hover-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
-.hover-menu-links {
-    @apply flex flex-col space-y-4 text-white text-xl;
+.hover-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
 }
 
-.hover-menu-link {
-    @apply hover:text-blue-400 transition-colors duration-300;
+.hover-menu li a:hover {
+    color: #151391;
 }

@@ -19,9 +19,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     /* Adjust as needed */
-    height: 80%;
+    height: 60%;
     /* Adjust as needed */
     object-fit: contain;
     opacity: 1;
@@ -31,9 +31,9 @@
 .hero-content {
     /* If you have a fixed header/navbar, you can add padding here */
     position: relative;
-    width: 30%;
+    width: 80%;
     /* Adjust as needed */
-    height: 30%;
+    height: 80%;
     /* Adjust as needed */
     z-index: 10;
     color: white;
