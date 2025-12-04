@@ -8,6 +8,7 @@ export default function Achievements() {
                 I’m a Licensed Electronics Engineer and passionate Software Developer who loves building systems
                 that merge electronics, automation, and intelligent algorithms.
                 My goal is to design meaningful solutions that create impact through technology.
+                d
             </p>
             <img
                 src={RJLogo}
