@@ -8,6 +8,7 @@ export default function Contact() {
                 I’m a Licensed Electronics Engineer and passionate Software Developer who loves building systems
                 that merge electronics, automation, and intelligent algorithms.
                 My goal is to design meaningful solutions that create impact through technology.
+                You can contact me at:
             </p>
             <img
                 src={RJLogo}
